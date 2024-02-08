@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://localhost:1433;databaseName=student;encrypt=true;trustServerCertificate=true
+        username: keven
+        password: root
+    jpa: 
+        show-sql: true
+        properties:
+            hibernate:
+                '[format_sql]': true
+
+        hibernate:
+            ddl-auto: update
+    security: 
+        user: 
+            password: root
